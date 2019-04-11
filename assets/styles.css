@@ -8,6 +8,52 @@ html {
 }
 body {
   margin: 0;
+
+  background-color: #f8f8f9;
   overflow-y: auto;
   position: unset;
+}
+
+img {
+  max-width: 100%;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.top-images {
+  border: 2px solid red;
+  width: 33.33333333%;
+}
+
+.top-images img {
+  display: block;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.column {
+  border: 2px solid red;
+  height: 100%;
+  margin-top: 8em;
+  width: 33.33333333%;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.product-description-container {
+  line-height: 1.8em;
+  position: sticky;
+  margin-left: 5em;
+}
+
+.purchase-container {
+  line-height: 1.8em;
+  position: sticky;
+  margin-right: 5em;
 }
