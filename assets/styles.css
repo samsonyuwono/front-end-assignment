@@ -2,36 +2,46 @@
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: Graphik-Medium;
+  src: url("/assets/fonts/Graphik-Medium.otf"),
+    url("/assets/fonts/AcrosstheRoad.woff"),
+    url("./assets/fonts/Graphik-Medium.ttf");
+}
+
 html {
-  font-family: sans-serif;
   line-height: 1.15;
 }
 body {
   margin: 0;
-
   background-color: #f8f8f9;
   overflow-y: auto;
   position: unset;
+  font-family: "Graphik-Medium", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
 }
 
 img {
   max-width: 100%;
+}
+a {
+  text-decoration: underline;
 }
 
 .top {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  width: 100%;
   margin-top: 20px;
 }
 
-.top-images {
+.top-product-images {
   border: 2px solid red;
   width: 33.33333333%;
-}
-
-.top-images img {
   display: block;
   position: relative;
   margin-bottom: 25px;
@@ -57,3 +67,51 @@ img {
   position: sticky;
   margin-right: 5em;
 }
+/*bottom */
+
+.bottom {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 2;
+}
+
+.category-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-column {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 2.5vw;
+}
+
+.category-title {
+  text-decoration: underline;
+  color: black;
+  padding: 5px 0px;
+}
+.category-title {
+  text-align: ;
+}
+.category-description {
+  font-weight: 100;
+  font-size: 8px;
+  margin: 5px 0;
+  letter-spacing: 1px;
+}
+
+.category-img {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+/*
+mobile bottom
+flex-direction: column;
+ justify-content: center;
+ vertical-align: top;
+ text-align: center;*/
