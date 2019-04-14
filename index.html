@@ -58,18 +58,21 @@
         <div class="product-column">
           <div class="purchase-container">
             <div class="product-price">$35.00</div>
-            <div class="colors">
-              <span id="color">color</span> <span id="black">black</span>
-              <span id="beige">beige</span>
+            <div class="color-selection">
+              <span class="color-label color">color </span>
+              <span class="color-label black">black &#10003;</span>
+              <span class="color-check"><i class="fa fa-check"></i></span>
+              <span class="color-label beige">beige</span>
+              <span class="color-check"><i class="fa fa-check"></i></span>
             </div>
 
-            <div class="quantity">
+            <div class="quantity-container">
               <span class="qty-btn subtract">-</span>
-              <span class="qty-minus">quantity (1)</span>
-              <span class="qty-add-to">+</span>
+              <span class="qty-btn number">quantity (1)</span>
+              <span class="qty-btn plus">+</span>
             </div>
-            <div class="size">
-              <select name="size" id=""
+            <div class="size-container">
+              <select class="size-dropdown" name="size" id=""
                 ><option>size</option>
                 <option>XXS</option>
                 <option>XS</option>
@@ -78,12 +81,13 @@
                 <option>L</option>
                 <option>XL</option>
                 <option>2XL</option>
-                <option>3XL</option></select
-              >
+                <option>3XL</option>
+              </select>
+
               <div class="size-chart"><a href="#">what's my size</a></div>
             </div>
 
-            <button>add to cart</button>
+            <button type="button" class="cart-button">add to cart</button>
             <div class="cycle-set">
               <a href="#">build a cycle set and save up to 20%</a>
             </div>
