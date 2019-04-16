@@ -96,7 +96,6 @@ a:hover {
   border: 1px solid #000;
   height: 23px;
   margin: 20px 0;
-  /*repeat*/
 }
 
 .color-label {
@@ -110,14 +109,29 @@ a:hover {
   text-align: left;
 }
 
+.black,
+.beige {
+  cursor: pointer;
+}
+
 .black {
-  color: white;
+  color: #ffffff;
   background-color: #000;
 }
 
 .beige {
-  background-color: #edd7a5;
   color: #000;
+  background-color: #edd7a5;
+}
+
+/*checkmarks*/
+.active-check {
+  color: #ffffff;
+  margin-left: 3px;
+}
+.hidden-check {
+  color: #ffffff;
+  display: none;
 }
 /*clean this*/
 .quantity-container,
