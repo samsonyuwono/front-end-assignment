@@ -4,8 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>SheThinx Product Page</title>
+
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" type-"text/css" href="./assets/styles.css">
+
+    <title>SheThinx Product Page</title>
   </head>
   <body>
     <main class="main">
@@ -61,9 +72,13 @@
             <div class="color-selection">
               <span class="color-label color">color </span>
               <span class="color-label black">black &#10003;</span>
-              <span class="color-check"><i class="fa fa-check"></i></span>
+              <!--
+                <span class="color-check"><i class="fa fa-check"></i></span>
+              -->
               <span class="color-label beige">beige</span>
-              <span class="color-check"><i class="fa fa-check"></i></span>
+              <!--
+                <span class="color-check"><i class="fa fa-check"></i></span>
+              -->
             </div>
 
             <div class="quantity-container">
@@ -93,11 +108,67 @@
             </div>
           </div>
         </div>
+
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+            <li data-target="#carousel" data-slide-to="4"></li>
+            <li data-target="#carousel" data-slide-to="5"></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="item active">
+              <img
+                class="carousel-img"
+                src="assets/top-section-images/highwaist_black_front_2.jpg"
+                alt="front 2"
+              />
+            </div>
+            <div class="item">
+              <img
+                class="carousel-img"
+                src="assets/top-section-images/highwaist_black_side.jpg"
+                alt="side"
+              />
+            </div>
+            <div class="item">
+              <img
+                class="carousel-img"
+                src="assets/top-section-images/highwaist_black_back.jpg"
+                alt="back"
+              />
+            </div>
+            <div class="item">
+              <img
+                class="carousel-img"
+                src="assets/top-section-images/highwaist_black_front_3.jpg"
+                alt="front 3"
+              />
+            </div>
+            <div class="item">
+              <img
+                class="carousel-img"
+                src="assets/top-section-images/highwaist_black_front_4.jpg"
+                alt="front 4"
+              />
+            </div>
+            <div class="item">
+              <img
+                class="carousel-img"
+                src="assets/top-section-images/highwaist_black_front.jpg"
+                alt="front"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="bottom">
         <div class="category-row">
-          <div class="category-column">
+          <div class="category-item">
             <a class="category" href="#">
               <img
                 class="category-img"
@@ -113,7 +184,7 @@
             </div>
           </div>
 
-          <div class="category-column">
+          <div class="category-item">
             <a class="category" href="#">
               <img
                 class="category-img"
@@ -130,7 +201,7 @@
         </div>
 
         <div class="category-row">
-          <div class="category-column">
+          <div class="category-item">
             <a class="category" href="#">
               <img
                 class="category-img"
@@ -144,7 +215,7 @@
         </div>
 
         <div class="category-row">
-          <div class="category-column">
+          <div class="category-item">
             <a class="category" href="#">
               <img
                 class="category-img"
@@ -156,7 +227,7 @@
             <p class="category-description">medium days</p>
           </div>
 
-          <div class="category-column">
+          <div class="category-item">
             <a class="category" href="#">
               <img
                 class="category-img"
@@ -170,5 +241,8 @@
         </div>
       </section>
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
