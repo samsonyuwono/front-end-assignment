@@ -11,8 +11,6 @@
     url("./assets/fonts/Graphik-Medium.ttf");
 }
 
-html {
-}
 body {
   margin: 0;
   line-height: 1.5;
@@ -111,7 +109,7 @@ a:hover {
 .color-label {
   width: calc(100% / 3);
   height: 100%;
-  padding: 2px 3px 0px 17px;
+  padding: 2px 2px 0px 17px;
   border: 1px solid #000;
   font-size: 12px;
   letter-spacing: 1px;
@@ -141,7 +139,7 @@ a:hover {
   color: #ffffff;
   display: none;
 }
-/*clean this*/
+
 .quantity-container,
 .quantity-btn {
   display: flex;
@@ -162,11 +160,9 @@ a:hover {
   font-size: 13px;
 }
 
-/*clean this*/
 .quantity-btn {
   border: 0.5px solid #000;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -201,7 +197,6 @@ a:hover {
   margin: 0;
   padding: 2px 0 0 12px;
   border: 1px solid #000;
-  border-radius: 0;
   background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMCA3LjMzbDIuODI5LTIuODMgOS4xNzUgOS4zMzkgOS4xNjctOS4zMzkgMi44MjkgMi44My0xMS45OTYgMTIuMTd6Ii8+PC9zdmc+)
     no-repeat 100%;
   background-size: 10px;
@@ -243,7 +238,7 @@ a:hover {
 .cycle-set {
   width: 100%;
   font-size: 12px;
-  letter-spacing: 1.5px;
+  letter-spacing: 2.5px;
   text-align: center;
 }
 
@@ -272,10 +267,6 @@ a:hover {
   text-decoration: underline;
   color: #000;
   padding: 5px 0px;
-}
-
-.category-title {
-  text-align: ;
 }
 
 .category-description {
@@ -341,6 +332,8 @@ a:hover {
   .carousel-indicators {
     width: 100%;
     top: 40em;
+    left: 0;
+    margin: 0;
     position: -webkit-sticky;
     position: -moz-sticky;
     position: -ms-sticky;
@@ -353,12 +346,12 @@ a:hover {
     margin: 0px 10px;
     width: 5px;
     height: 5px;
+    border-radius: 50%;
   }
 
   .carousel-indicators li {
     background-color: #888787;
     border: none;
-    transform: translateY(-50%);
   }
 
   .carousel-indicators .active {
