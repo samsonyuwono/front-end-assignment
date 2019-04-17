@@ -1,8 +1,9 @@
-# THINX Front-End Engineer Challenge Instructions
+# THINX Front-End Engineer Challenge ReadMe
 
 ---
 
 ##### General:
+
 1. Use vanilla JS or jQuery for interactions. Do not use an MVC framework.
 2. Use plain CSS or SCSS. Do not use any libraries or frameworks.
 3. Make sure your code is clean and well documented.
@@ -15,9 +16,10 @@ https://www.ssense.com/en-us/women/product/31-phillip-lim/purple-lofty-rib-crewn
 ---
 
 ##### All text is static, except two things on the top right section:
-* Black/beige should be clickable and the checkmark should appear/disappear like real world use. On page load, Black should be checked.
-* Quantity +/- should be functional.
-* Size dropdown should work as well with sizes XS-XXL. **Create the size dropdown without using the `select` element.**
+
+- Black/beige should be clickable and the checkmark should appear/disappear like real world use. On page load, Black should be checked.
+- Quantity +/- should be functional.
+- Size dropdown should work as well with sizes XS-XXL. **Create the size dropdown without using the `select` element.**
 
 ---
 
