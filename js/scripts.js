@@ -9,6 +9,7 @@ const productImages = document.querySelectorAll(".product-image");
 productImages.forEach(image => image.addEventListener("click", toggleZoom));
 
 let zoomedIn = false;
+
 function toggleZoom(event) {
   const productImageNumber = event.target.dataset.image;
   const currentZoomClass = document.querySelector(
@@ -91,4 +92,30 @@ function decrease() {
 function increase() {
   currentQuantity += 1;
   updateQuantity();
+}
+
+const sizeContainer = document.querySelector(".size-container");
+const sizeDropdown = document.querySelector(".size-dropdown");
+const sizeOption = document.querySelectorAll(".size-option");
+sizeDropdown.addEventListener("click", toggleDropdown);
+sizeOption.forEach(size => size.addEventListener("click", handleOptionSelect));
+
+let isOpen = false;
+
+function toggleDropdown() {
+  if (isOpen === false) {
+    isOpen = true;
+    sizeContainer.style.overflow = "initial";
+  } else {
+    isOpen = false;
+    sizeContainer.style.overflow = "hidden";
+  }
+}
+
+function handleOptionSelect(event) {
+  while (sizeDropdown.firstChild) {
+    sizeDropdown.removeChild(sizeDropdown.firstChild);
+  }
+  sizeDropdown.innerHTML = document.getElementById(event.target.id).innerHTML;
+  toggleDropdown();
 }
