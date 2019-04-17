@@ -58,6 +58,9 @@ a:hover {
   display: flex;
   width: 300px;
   position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
   position: sticky;
   justify-content: center;
   margin: 25em 0;
@@ -68,10 +71,11 @@ a:hover {
 .purchase-container {
   flex-flow: column wrap;
   width: 300px;
-  -moz-appearance: sticky;
   position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
   position: sticky;
-
   top: 22em;
   height: max-content;
 }
@@ -129,7 +133,6 @@ a:hover {
   background-color: #edd7a5;
 }
 
-/*checkmarks*/
 .active-check {
   color: #ffffff;
   margin-left: 3px;
@@ -197,7 +200,6 @@ a:hover {
   font-size: 13px;
   margin: 0;
   padding: 2px 0 0 12px;
-  -webkit-appearance: none;
   border: 1px solid #000;
   border-radius: 0;
   background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMCA3LjMzbDIuODI5LTIuODMgOS4xNzUgOS4zMzkgOS4xNjctOS4zMzkgMi44MjkgMi44My0xMS45OTYgMTIuMTd6Ii8+PC9zdmc+)
@@ -244,8 +246,6 @@ a:hover {
   letter-spacing: 1.5px;
   text-align: center;
 }
-
-/*bottom */
 
 .bottom {
   background-color: white;
@@ -342,6 +342,9 @@ a:hover {
     width: 100%;
     top: 40em;
     position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
     position: sticky;
   }
 

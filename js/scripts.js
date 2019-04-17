@@ -44,14 +44,14 @@ function toggleCarouselZoom(event) {
     carouselIndicators.style.position = "absolute";
     carouselContainer.classList.remove("carousel-inner");
     carouselContainer.classList.add("product-zoom-images");
+    carouselZoomClass.scrollIntoView();
   } else {
-    //zoomOut needs to be fixed
     zoomedIn = false;
     carouselIndicators.style.position = "sticky";
     carouselContainer.classList.add("carousel-inner");
     carouselContainer.classList.remove("product-zoom-images");
+    window.scrollTo(0, 0);
   }
-  carouselZoomClass.scrollIntoView();
 }
 
 const blackColorBox = document.querySelector(".black");
