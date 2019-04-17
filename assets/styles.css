@@ -40,12 +40,14 @@ a:hover {
   flex-direction: row;
 }
 
-.top-product-images-container {
+.product-images-container {
   flex-basis: 33%;
   margin: 3em 0;
+  cursor: url(//res.cloudinary.com/ssenseweb/image/upload/v1422559505/web/zoom-in-16x16.png),
+    pointer;
 }
 
-.top-product-images {
+.product-image {
   object-fit: contain;
   width: 510px;
   max-width: 40vw;
@@ -55,6 +57,7 @@ a:hover {
 .product-column {
   display: flex;
   width: 300px;
+  position: -webkit-sticky;
   position: sticky;
   justify-content: center;
   margin: 25em 0;
@@ -65,7 +68,10 @@ a:hover {
 .purchase-container {
   flex-flow: column wrap;
   width: 300px;
+  -moz-appearance: sticky;
+  position: -webkit-sticky;
   position: sticky;
+
   top: 22em;
   height: max-content;
 }
@@ -271,6 +277,25 @@ a:hover {
   display: none;
 }
 
+/*zoom*/
+.product-zoom-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  background-color: #f8f8f8;
+  cursor: url(http://res.cloudinary.com/ssenseweb/image/upload/v1422559505/web/zoom-out-16x16.png),
+    pointer;
+}
+
+.product-zoom-images img,
+.product-zoom-images .item img {
+  width: 900px;
+  max-width: 100%;
+}
+
 @media all and (max-width: 1024px) {
   .top {
     flex-direction: column;
@@ -281,6 +306,11 @@ a:hover {
     order: 1;
   }
 
+  .carousel-inner {
+    cursor: url(//res.cloudinary.com/ssenseweb/image/upload/v1422559505/web/zoom-in-16x16.png),
+      pointer;
+  }
+
   .product-column {
     width: 100%;
     position: relative;
@@ -288,13 +318,14 @@ a:hover {
     order: 2;
   }
 
-  .top-product-images-container {
+  .product-images-container {
     display: none;
   }
 
   .carousel-indicators {
     width: 100%;
     top: 40em;
+    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -315,10 +346,10 @@ a:hover {
     background-color: #333;
   }
 
-  .carousel-img {
+  .carousel-inner .item .carousel-img {
     position: relative;
     margin: 0 auto 35px auto;
-    max-width: 350px !important;
+    max-width: 350px;
   }
 
   .purchase-container {
