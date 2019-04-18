@@ -54,11 +54,6 @@ a:hover {
 .product-column {
   display: flex;
   width: 300px;
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
-  position: sticky;
   justify-content: center;
   margin: 25em 0;
   font-size: 0.5em;
